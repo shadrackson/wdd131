@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Shadrack Onyango</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Shadrack Onyango. Page is about personal website">
+    <meta name="author" content="Shadrack Onyango">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Shadrack</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    </header>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/shadrack-onyango1234">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/2?lang=eng">Scripture</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </nav>
     
+    <main>
+        <h1>Shadrack Onyango</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="My profile photo">
+            <p>Hi there👋. I am Shadrack Onyango born and raised in Kenya. I am a passionate Automechanic by profession who transitioned to the 
+                field of Software Development. I enjoy socializing, serving others, playing rugby and swimming. I am passionate about AI and technology. I enjoy learning new things everyday 🧑‍💻 ,empathizing with users and solving real world problems. </p>
+        </section>
+
+        <section class="card">
+            <h2>Discover My Journey🛸</h2>
+            <img src="images/kenya.jpg" alt="Photo of my favorite part of the coast">
+            <p>During my free times, I always walk along the shores of the coastal beach and interact with whales, fishes, sharks, turtles and dolphins😎🐳🐬🐟🦈🐢. I dived into web and computer programming early march last year 2025, it was really exciting for me to discover the amazing possibilities web development can unlock. In line with that I also take courses in UX Design  by google, AI Essentials
+                by ALX Africa. During my free time I work as an AI Data Annotator and Auditor at Atlas Capture.ai. Cool right! 😊
+            </p>
+        </section>
+        <aside>
+            <h3>Helpful Resources</h3>
+            <p>MDN Web Docs and W3Schools are great references for study and learning web development.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span> Shadrack Onyango, Kenya ⛓️ </p>
+         <p>Last Modified <span id="lastModified"></span></p>
+
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>

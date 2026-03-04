@@ -1,0 +1,83 @@
+/*Reset and Body basics*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/*Header and Course Title*/
+header {
+    text-align: justify;
+    padding: 1rem 2rem;
+    background: #222;
+    color: #fff;
+}
+
+#course-title{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/*Navigation Menu with flexbox*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(10, 13, 14, 0.733);
+    font-weight: 500;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.5rem 1rem;
+    min-height: 44px;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+    border-radius: 4px;
+}
+
+/* Main and Card */
+
+.img {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr ;
+    background: #009688;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
