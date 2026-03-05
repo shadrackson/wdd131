@@ -16,7 +16,7 @@ body {
 
 /*Header and Course Title*/
 header {
-    text-align: justify;
+    text-align: center;
     padding: 1rem 2rem;
     background: #222;
     color: #fff;
@@ -32,52 +32,78 @@ header {
 
 /*Navigation Menu with flexbox*/
 
+nav {
+    background: #eee;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15rem;
-    padding: 1.5rem;
+    gap: 2rem;
+    padding: 1rem;
     flex-wrap: wrap;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgba(10, 13, 14, 0.733);
+    color: #333;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.25rem;
     min-height: 44px;
 }
 
-nav ul li a:hover {
-    color: #00bcd4;
+nav ul li a:hover,
+nav ul li a :focus {
+    background-color: #00bcd4;
+    color: #fff;
     border-radius: 4px;
 }
 
-/* Main and Card */
+/* Main Layout and Card */
 
-.img {
-    height: auto;
-    display: block;
-    max-width: 100%;
-    border-radius: 8px;
-}
 main {
     display: grid;
-    grid-template-columns: 2fr ;
-    background: #009688;
-    color: #fff;
-    text-align: center;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
     padding: 2rem;
-    
+    color: #0f1111;
+}
+ 
+/* Card Styling*/
+.card {
+    background: #a7b5db;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+/*Aside*/
+aside{
+    background: #26a5bb;
+    padding: 3.5rem;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer*/
 footer {
     background: #222;
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
 }
+
