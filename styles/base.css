@@ -8,7 +8,7 @@
 
 /* Body Styling*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
@@ -33,7 +33,7 @@ header {
 /*Navigation Menu with flexbox*/
 
 nav {
-    background: #eee;
+    background: white;
 }
 
 nav ul {
