@@ -18,7 +18,7 @@ body {
 header {
     text-align: center;
     padding: 1rem 2rem;
-    background: #222;
+    background: #0d98b1;
     color: #fff;
 }
 
@@ -59,7 +59,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a :focus {
-    background-color: #00bcd4;
+    background-color: #27cc18;
     color: #fff;
     border-radius: 4px;
 }
@@ -93,7 +93,7 @@ main {
 
 /*Aside*/
 aside{
-    background: #26a5bb;
+    background: #c7dbdf;
     padding: 3.5rem;
     border-radius: 8px;
     height: fit-content;
@@ -102,7 +102,7 @@ aside{
 
 /* Footer*/
 footer {
-    background: #222;
+    background: #0d98b1;
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
