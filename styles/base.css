@@ -8,7 +8,7 @@
 
 /* Body Styling*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
@@ -58,10 +58,39 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a :focus {
+nav ul li a:focus {
     background-color: #27cc18;
     color: #fff;
     border-radius: 4px;
+}
+
+/* Hamburger Button */
+#menu-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/*Mobile Navigation*/
+@media (max-width: 768px) {
+
+    #menu-button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    nav-ul{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
 }
 
 /* Main Layout and Card */
