@@ -1,33 +1,24 @@
 
 
 
-// Get the element where the date will appear
+// Update last modified date
 const lastModified = document.querySelector("#lastModified");
-
-// Insert the last modified date of the document
 lastModified.textContent = document.lastModified;
 
-/* Selects the hamburger menu button */
+// Hamburger menu button
+const menuButton = document.querySelector("#menu-button");
 
-const button = document.querySelector("#menu-button");
-
-/* Select the navigation menu */
-
+// Navigation menu
 const navigation = document.querySelector(".navigation");
 
+// Click event to toggle menu
+menuButton.addEventListener("click", () => {
 
-/* click event to toggle the menu */
-
-button.addEventListener("click", () => {
-
-    /* Toggle the class that shows or hides the menu */
-
+    // Toggle the class that shows/hides the menu
     navigation.classList.toggle("open");
 
-
-    /* Change the icon from ☰ to X when menu is open */
-
-    button.textContent =
-        button.textContent === "☰" ? "X" : "☰";
+    // Change the icon from ☰ to X
+    menuButton.textContent =
+        menuButton.textContent === "☰" ? "X" : "☰";
 
 });
