@@ -1,0 +1,23 @@
+
+
+
+/*Media query for larger screens*/
+@media (min-width: 768px){
+    /*Hides hamburger button on larger screens*/
+    #menu-button{
+        display: none;
+    }
+
+
+/*Displays navigation horizontally*/
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Displays temple images in multiple columns*/
+.container{
+    grid-template-columns: repeat(3,1fr);
+}
+}
