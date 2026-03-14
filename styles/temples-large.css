@@ -11,9 +11,16 @@
 
 /*Displays navigation horizontally*/
 .navigation{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 2rem;
 }
 
 /*Displays temple images in multiple columns*/
