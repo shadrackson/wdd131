@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Shadrack Onyango. Page is about Responsiveness and DOM">
+    <meta name="author" content="Shadrack Onyango">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="menu-button">☰</button>
+
+        <nav class="navgation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+        <div class="container">
+
+            <figure>
+                <img src="images/salt-lake.jpg" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rome.jpg" alt="Rome Temple">
+                <figcaption>Rome Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/accra-ghana.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/nairobi.jpg" alt="Nairobi Kenya Temple">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/tokyo.jpg" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/paris.jpg" alt="Paris France Temple">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/london.jpg" alt="London England Temple">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mexico.jpg" alt="Mexico City Temple">
+                <figcaption>Mexico City Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/sydney.jpg" alt="Sydney Australia Temple">
+                <figcaption>Sydney Australia Temple</figcaption>
+            </figure>
+
+        </div>
+    </main>
+    <footer>
+        <p><strong>©️</strong><span id="currentyear"></span> Shadrack Onyango, Kenya  </p>
+         <p>Last Modified: <span id="lastModified"></span></p>
+
+    </footer>
+    
+</body>
+</html>
