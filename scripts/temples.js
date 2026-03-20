@@ -1,6 +1,12 @@
 
 
 
+// Get the current year
+const year = new Date().getFullYear();
+
+//Insert the year into the footer
+document.querySelector("#currentyear").textContent = year;
+
 // Update last modified date
 const lastModified = document.querySelector("#lastModified");
 lastModified.textContent = document.lastModified;
