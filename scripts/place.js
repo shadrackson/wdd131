@@ -25,3 +25,8 @@ if (temp <= 10 && windSpeed > 4.8) {
 } else {
     document.getElementById('wind-chill').textContent = "N/A";
 } 
+
+
+
+
+
