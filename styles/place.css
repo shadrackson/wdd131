@@ -1,6 +1,16 @@
 
 
 
+:root {
+    --primary-color: #008000;
+    --secondary-color: #b85f5f;
+    --bg-color: #f5f5f5;
+    --text-color: #33333;
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+
 /* ===============================
    GLOBAL RESET
 ================================*/
