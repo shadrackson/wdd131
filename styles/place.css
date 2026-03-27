@@ -108,7 +108,7 @@ picture img {
 
 /* Weather icon for desktop */
 .weather-box .weather-icon::after {
-    content: "⛅";
+    content: "";
 }
 
 /* ===============================
