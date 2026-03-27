@@ -2,21 +2,6 @@
 
 
 /* ===============================
-   CSS VARIABLES
-================================*/
-:root {
-    --primary-color: #008000;
-    --secondary-color: #b85f5f;
-    --bg-color: #f5f5f5;
-    --text-color: #33333;
-    --card-bg: #ffffff;
-    --heading-font: 'Merriweather', serif;
-    --body-font: 'Roboto', sans-serif;
-    --shadow-color: #000001a;
-    --link-hover: #5f9ea0;
-}  
-
-/* ===============================
    GLOBAL RESET
 ================================*/
 * {
@@ -29,9 +14,9 @@
    BODY
 ================================*/
 body {
-    font-family: var(--body-font);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
     line-height: 1.6;
 }
 
@@ -40,13 +25,13 @@ body {
 ================================*/
 header {
     text-align: center;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #008000;
+    color: #ffffff;
     padding: 2rem 0;
 }
 
 header h1 {
-    font-family: var(--heading-font);
+    font-family: 'Merriweather', serif;
     font-size: 2.5rem;
 }
 
@@ -79,10 +64,10 @@ picture img {
     width: 250px;
     padding: 1rem;
 
-    background-color: var(--card-bg);
+    background-color: rgba(255,255,255,0.9);
     border-radius: 15px;
 
-    box-shadow: 0 4px 10px rgba(--shadow-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .data-box h2 {
@@ -109,10 +94,10 @@ picture img {
     width: 250px;
     padding: 1rem;
 
-    background-color: var(--card-bg);
+    background-color: rgba(255,255,255,0.9);
     border-radius: 15px;
 
-    box-shadow: 0 4px 10px var(--shadow-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .weather-box h2 {
@@ -131,8 +116,8 @@ picture img {
 ================================*/
 footer {
     text-align: center;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: #008000;
+    color: #ffffff;
     padding: 1rem;
     margin-top: 2rem;
 }
@@ -179,5 +164,5 @@ footer p {
 ================================*/
 a:hover {
     text-decoration: underline;
-    color: var(--link-hover);
-} 
+    color: #5f9ea0;
+}
