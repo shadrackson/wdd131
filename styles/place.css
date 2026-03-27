@@ -5,14 +5,16 @@
    CSS VARIABLES
 ================================*/
 :root {
-    --primary-color: green;
-    --secondary-color: #b85f5f8c;
+    --primary-color: #008000;
+    --secondary-color: #b85f5f;
     --bg-color: #f5f5f5;
-    --text-color: #333;
-
+    --text-color: #33333;
+    --card-bg: #ffffff;
     --heading-font: 'Merriweather', serif;
     --body-font: 'Roboto', sans-serif;
-}
+    --shadow-color: #000001a;
+    --link-hover: #5f9ea0;
+}  
 
 /* ===============================
    GLOBAL RESET
@@ -77,10 +79,10 @@ picture img {
     width: 250px;
     padding: 1rem;
 
-    background-color: rgba(255,255,255,0.9);
+    background-color: var(--card-bg);
     border-radius: 15px;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(--shadow-color);
 }
 
 .data-box h2 {
@@ -107,10 +109,10 @@ picture img {
     width: 250px;
     padding: 1rem;
 
-    background-color: rgba(255,255,255,0.9);
+    background-color: var(--card-bg);
     border-radius: 15px;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px var(--shadow-color);
 }
 
 .weather-box h2 {
@@ -177,5 +179,5 @@ footer p {
 ================================*/
 a:hover {
     text-decoration: underline;
-    color: cadetblue;
+    color: var(--link-hover);
 } 
