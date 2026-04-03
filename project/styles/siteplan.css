@@ -1,0 +1,122 @@
+
+
+
+/*Global Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*General page styling*/
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F3F4F6;
+    color: #111827; /*Dark Grey text*/
+}
+/* Header styling*/
+header {
+    background-color: #1E3A8A;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /*Allows wrapping on smaller screens*/
+}
+/*Navigation menu styling*/
+#nav-menu {
+    list-style: none;/*Removes bullet points*/
+    display: flex;
+    gap: 1rem; /*Space between links*/
+}
+
+#nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#nav-menu a:hover {
+    color: #F97316;
+}
+
+/*Main content styling*/
+main {
+    padding: 2rem;
+}
+ 
+/*Tables styling*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #2e57c9;
+    color: #f7f7f7;
+}
+
+/*Color schema*/
+.primary-blue {
+    background-color: #1E3A8A;
+    color: #f7f7f7;
+}
+
+.accent-orange {
+    background-color: #F97316;
+    color: #f7f7f7;
+}
+
+.neutral-gray {
+    background-color: #F3F4F6;
+}
+
+.text-dark {
+    background-color: #111827;
+    color: #f7f7f7;
+}
+/*Footer styling*/
+footer {
+    background-color: #1E3A8A;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+
+/*Mobile first: stack nav vertically*/
+@media (max-width: 768px) {
+    #nav-menu {
+        flex-direction: column; /*Stack links vertically*/
+        display: none; /*Hidden by default, toggled with JS*/
+        width: 100%;
+        background-color: #1E3A8A;
+        padding: 1rem;
+    }
+
+    #nav-menu.open {
+        display: flex;/*Show menu when toggled*/
+    }
+
+    header {
+        flex-direction: column;/*Stack logo and nav*/
+        align-items: flex-start;
+    }
+}
+/*Desktop view*/
+@media (min-width: 769px) {
+    #nav-menu {
+        display: flex; /*Always visible on desktop*/
+        flex-direction: row;
+    }
+}
