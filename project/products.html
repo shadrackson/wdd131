@@ -1,0 +1,168 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our banking products including savings accounts, loans, and investment solutions.">
+  <meta name="author" content="Shadrack Onyango">
+  <title>Products | Comrades Banking Solutions</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/comrades.css">
+  <!-- JavaScript -->
+  <script src="scripts/comrades.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo-section">
+          <img src="images/logo.webp" alt="Comrades Banking Solutions Logo" class="logo">
+          <h1>Comrades Banking Solutions</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="hero-title">Banking Products Designed for You</h2>
+        <p class="hero-quote">Simple, secure, and flexible financial solutions to meet your everyday needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title">Our Core Services</h2>
+
+      <div class="products-grid">
+
+        <!-- Savings -->
+        <div class="product-card">
+          <h3>Savings Accounts</h3>
+          <p>Secure your money while earning interest with flexible access.</p>
+          <ul>
+            <li>✔ Competitive interest rates</li>
+            <li>✔ Easy withdrawals</li>
+            <li>✔ No hidden charges</li>
+          </ul>
+          <a href="contact.html" class="btn-primary">Open Account</a>
+        </div>
+
+        <!-- Loans -->
+        <div class="product-card">
+          <h3>Loans & Credit</h3>
+          <p>Get financial support when you need it most.</p>
+          <ul>
+            <li>✔ Personal loans</li>
+            <li>✔ Business financing</li>
+            <li>✔ Flexible repayment plans</li>
+          </ul>
+          <a href="contact.html" class="btn-primary">Apply Now</a>
+        </div>
+
+        <!-- Investments -->
+        <div class="product-card">
+          <h3>Investment Plans</h3>
+          <p>Grow your wealth with smart investment options.</p>
+          <ul>
+            <li>✔ Long-term growth plans</li>
+            <li>✔ Expert financial advice</li>
+            <li>✔ Low-risk options available</li>
+          </ul>
+          <a href="contact.html" class="btn-primary">Start Investing</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title">Why Our Products Stand Out</h2>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure</h3>
+          <p>Your finances are protected with advanced security systems.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast</h3>
+          <p>Quick approvals and instant transactions.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">📊</div>
+          <h3>Flexible</h3>
+          <p>Products tailored to fit your financial goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Start Your Banking Journey Today</h2>
+        <p>Choose the right product and take control of your financial future.</p>
+
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn-primary">Get Started</a>
+          <a href="about.html" class="btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy;  Comrades Banking Solutions. All rights reserved.</p>
+          <p>Last updated: <span id="last-updated"></span></p>
+        </div>
+
+        <div class="social-links">
+          <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('last-updated').textContent = document.lastModified;
+  </script>
+
+</body>
+</html>
