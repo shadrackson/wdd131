@@ -1,107 +1,77 @@
 
 
 
-// ===============================
-// COMRADES BANKING SOLUTIONS JS
-// ===============================
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  // ===============================
-  // 1. LAST UPDATED FOOTER
-  // ===============================
+ 
+// LAST MODIFIED DISPLAY
+ 
+function updateLastModified() {
   const lastUpdated = document.getElementById("last-updated");
   if (lastUpdated) {
     lastUpdated.textContent = document.lastModified;
   }
+}
+updateLastModified();
 
-  // ===============================
-  // 2. CONTACT FORM VALIDATION
-  // ===============================
-  const form = document.getElementById("contactForm");
+// CONTACT FORM LOGIC
+ 
+// Get form elements
+const contactForm = document.getElementById("contactForm");
 
-  if (form) {
+// Array for storing submissions (localStorage)
+let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
 
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const messageInput = document.getElementById("message");
 
-    form.addEventListener("submit", (e) => {
+// Object constructor function 
+function createSubmission(name, email, subject, message) {
+  return {
+    name,
+    email,
+    subject,
+    message,
+    time: new Date().toLocaleString()
+  };
+}
 
-      let isValid = true;
 
-      clearErrors();
+// Event Listener (FORM SUBMIT)
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      // Name validation
-      if (nameInput.value.trim() === "") {
-        showError(nameInput, "Full name is required");
-        isValid = false;
-      }
+    // DOM values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value.trim();
 
-      // Email validation
-      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
-      if (!emailInput.value.match(emailPattern)) {
-        showError(emailInput, "Enter a valid email address");
-        isValid = false;
-      }
+    // CONDITIONAL LOGIC
 
-      // Message validation
-      if (messageInput.value.trim().length < 10) {
-        showError(messageInput, "Message must be at least 10 characters");
-        isValid = false;
-      }
-
-      // Stop submission if invalid
-      if (!isValid) {
-        e.preventDefault();
-      }
-
-    });
-
-    // ===============================
-    // 3. REAL-TIME INPUT FEEDBACK
-    // ===============================
-    [nameInput, emailInput, messageInput].forEach(input => {
-      input.addEventListener("input", () => {
-        removeError(input);
-      });
-    });
-
-  }
-
-  // ===============================
-  // 4. HELPER FUNCTIONS
-  // ===============================
-
-  function showError(input, message) {
-    const parent = input.parentElement;
-
-    let error = parent.querySelector(".error-message");
-
-    if (!error) {
-      error = document.createElement("small");
-      error.classList.add("error-message");
-      parent.appendChild(error);
+    if (!name || !email || !subject || !message) {
+      alert("Please fill in all fields before submitting.");
+      return;
     }
 
-    error.textContent = message;
-    input.classList.add("input-error");
-  }
+    // Create object
+    const newEntry = createSubmission(name, email, subject, message);
 
-  function removeError(input) {
-    const parent = input.parentElement;
-    const error = parent.querySelector(".error-message");
+    // Array method
+    submissions.push(newEntry);
 
-    if (error) {
-      error.remove();
-    }
+    // localStorage
+    localStorage.setItem("submissions", JSON.stringify(submissions));
 
-    input.classList.remove("input-error");
-  }
+    // Template literal confirmation
+    alert(`Thank you ${name}, your message has been received.`);
 
-  function clearErrors() {
-    document.querySelectorAll(".error-message").forEach(el => el.remove());
-    document.querySelectorAll(".input-error").forEach(el => el.classList.remove("input-error"));
-  }
+    // Reset form
+    contactForm.reset();
 
-});
+    // REDIRECT TO SUBMISSION PAGE
+    window.location.href = "submission.html";
+  });
+}
+
+function getTotalSubmissions() {
+  return submissions.length;
+}
